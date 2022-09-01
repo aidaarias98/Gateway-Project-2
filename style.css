@@ -1,0 +1,286 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+ 
+/*nav bar*/
+nav{
+    width:100%;
+    background-color: black;
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    
+}
+a:link { text-decoration: none; }
+
+/*this is for the right side menu bar*/
+ul{
+    margin: 0;
+    /* margin-right: 100px; */ 
+}
+ul li{
+    float: left;
+    padding:0 15px;
+    list-style: none;
+  font-size: 20px; font-family: 'Dancing Script', cursive
+}
+
+ul li a:hover{
+    color:red
+}
+
+a{
+  color: white;}
+
+/*NONNAS PIZZERIA LEFT HAND LOGO*/
+upperlogo {
+   display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    font-size: 40px; font-family: 'Dancing Script', cursive;
+    color: red ;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.logo2 {
+    font-size: 40px; font-family: 'Dancing Script', cursive;
+    color: red ;
+    font-weight: bold;
+    margin-left: 20px;
+}
+/*this is for the actual background picture*/
+.hero {
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
+  /* flexbox */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /*text styles*/
+  text-align: center;
+  /*background styles (actual pizza image)*/
+  background-image:url('https://cdn.vox-cdn.com/thumbor/0h4YH5EGgqnuLmw_BRqJF2sX8I8=/0x0:1024x768/1820x1213/filters:focal(431x303:593x465):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61142507/3736737751_6f75425cf5_b.0.1536106994.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  border-radius: 0;
+}
+
+.hero h1{
+  /* text style*/
+  font-size: 150px; font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  /* Margins*/
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero .btn {
+  /* Positioning and sizing */
+  display: block;
+  width: 200px;
+  background:black;
+  /*padding and margin*/
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right:auto;
+  /*text styles*/
+  color: white;
+  text-decoration: none;  
+  font-size:1.5em; font-family:'Dancing Script', cursive;
+  /*border styles*/
+  border: 3px solid white;
+  border-radius: 20px;
+}
+
+  
+.hero .btn:hover{
+  color: red;
+}
+
+
+/*this is for the menu*/
+.container {
+  background-color: black;
+  padding: 50px;
+  margin: 60px;
+  font-family: "Amatic SC", sans-serif;
+}
+
+.menu {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 14px;
+}
+
+.menu-group-heading {
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 2px solid red; 
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 1 fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+  color: white;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  color: red;  
+}
+
+.menu-item-name {
+  margin-right: 1.5em;
+  
+}
+
+.menu-item-description {
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    font-size: 16px;
+  }
+
+  .menu-group {
+    grid-template-columns:repeat (1fr);
+  }
+
+  .menu-item-image {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+
+
+/*ABOUT page story*/
+.About{
+  background-color: black;
+  padding: 50px;
+  margin: 60px;
+  font-family: "Amatic SC", sans-serif; 
+}
+.ourstory{
+  font-weight: bold;
+  text-align: center;
+  color: red;
+  font-size: 60px; 
+}
+.ourstory-description{
+  text-align: center;
+  color: white;
+  font-size: 30px;  
+}
+
+.abouttitles{
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+.opening,
+.opening2{
+  text-align:center;
+  color: white;
+  font-size: 30px;
+}
+
+  /*contact page*/
+.container1{
+  background-color: black;
+  border-radius: 5px;
+  padding: 40px;
+  margin: 40px;
+  font-family: "Amatic SC", sans-serif;
+}
+  
+ .heading1 {
+   text-align: center;
+   font-size: 30px;
+   font-family: 'Dancing Script', cursive;
+ }
+
+  h2 {
+    font-size: 30px;
+    color: white;
+  }
+
+  label{
+    font-size: 20px;
+    color: white;
+  }
+  
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 5px solid red;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+  
+  input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+}
+
+  
+/* footer */
+.footer {
+  display: flex;  
+  justify-content: center;
+   padding-bottom: 30px;
+   padding-top: 30px;
+   margin:0;
+   width: 100%;
+   background-color: black;
+   color: white;
+}
+  
